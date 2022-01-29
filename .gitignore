@@ -1,0 +1,8 @@
+*.log*
+*.env*
+*.example*
+*.DS_Store*
+build/
+dist/
+target/
+data/

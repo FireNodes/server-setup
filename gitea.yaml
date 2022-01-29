@@ -1,0 +1,11 @@
+ingress:
+  enabled: true
+  className: "traefik"
+  annotations:
+    traefik.ingress.kubernetes.io/router.entrypoints: websecure
+    traefik.ingress.kubernetes.io/router.tls: "true"
+  hosts:
+    - host: git.flowtr.dev
+      paths:
+        - path: /
+          pathType: Prefix
